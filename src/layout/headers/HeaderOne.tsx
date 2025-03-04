@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import Link from "next/link";
-import logoImg from "../../../public/assets/img/logo/logo.png"
+import logoImg from "../../../public/assets/img/logo/logo.png";
 import Image from "next/image";
 import TopHeader from "./TopHeader";
 import { usePathname } from "next/navigation";
@@ -48,74 +48,17 @@ const HeaderOne = () => {
               <div className="col-xl-3 col-lg-3 col-md-6 col-8 d-flex align-items-center">
                 <div className="logo">
                   <Link href="/">
-                    <Image
-                      src={logoImg}
-                      width={134}
-                      height={34}
-                      alt="flag"
-                    />
+                    <Image src={logoImg} width={134} height={34} alt="flag" />
                   </Link>
                 </div>
               </div>
+              <div className="col-xl-4 col-lg-4 "></div>
               <div
                 id="right-header"
-                className="col-xl-9 col-lg-9 col-md-6 col-4"
-              >
-                <div className="header-button f-right d-none d-xl-block">
-                  <Link className="btn" href="/goals">
-                    <span className="btn-text">
-                      Consultancy{" "}
-                      <i className="fas fa-long-arrow-alt-right"></i>
-                    </span>
-                  </Link>
-                </div>
-                {/* <div className="header-button f-right d-lg-block">
-                  <div className="bd-header__right d-flex align-items-center justify-content-end">
-                    <div className="bd-action__cart-list">
-                      <div className="bd-action__item">
-                        <div className="bd-action__cart">
-                          <div
-                            className="bd-action__cart-icon"
-                            onClick={() => setOpenCart(true)}
-                          >
-                            <span className="bd-cart-mini-btn">
-                              <CartIcon />
-                            </span>
-                            <span className="bd-action__item-number cart-count">
-                              {productQuantity}
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="bd-action__item">
-                        <div className="bd-action__wishlist">
-                          <div
-                            className="bd-action__wistlist-icon"
-                            onClick={() => setOpenWishlist(true)}
-                          >
-                            <span className="bd-cart-mini-btn">
-                              <WishlistIcon />
-                            </span>
-                            <span className="bd-action__item-number wishlist-count">
-                              {wishlistQuantity}
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="d-inline-block d-xl-none  text-right">
-                        <div className="menu-bar">
-                          <button className="bars" onClick={toggleSideMenu}>
-                            <i className="fas fa-bars"></i>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
-
+                className="col-xl-5 col-lg-5 col-md-6 col-4">
                 <div className="main-menu text-right d-none d-xl-block">
                   <nav id="mobile-menu">
-                    <ul>
+                    <ul className="d-flex">
                       {navMenuData.map((item) => (
                         <li key={item.id}>
                           <Link href={item.link}> {item.label} </Link>
@@ -143,8 +86,7 @@ const HeaderOne = () => {
         <MobileMenu />
         <div
           onClick={toggleSideMenu}
-          className={sideMenuOpen ? "body-overlay show" : "body-overlay"}
-        ></div>
+          className={sideMenuOpen ? "body-overlay show" : "body-overlay"}></div>
       </header>
       <SidebarCart />
       <SidebarWishlist />

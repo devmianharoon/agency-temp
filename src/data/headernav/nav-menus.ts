@@ -33,7 +33,7 @@ const navMenuData: MenuItem[] = [
   },
   {
     id: 4,
-    label: "Blog",
+    label: "Portfolio",
     link: "/blog",
     hasDropdown: false,
   },

@@ -23,7 +23,7 @@ const AboutService = () => {
                     <h3> {item.title} </h3>
                     <p>{item?.details}</p>
                     <Link href={`/service-manage/${item.id}`}>
-                      <span className="services-button">
+                      <span className="">
                         read more{" "}
                         <i className="fas fa-long-arrow-alt-right"></i>
                       </span>

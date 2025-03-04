@@ -31,7 +31,7 @@
 }
 
 li.active-tab {
-  color: #096bd8 !important;
+  color: #81bfda !important;
 }
 
 .team-text .team-title {
@@ -449,7 +449,11 @@ ul.tab-menu {
 
 .banner-button-next.slick-arrow {
   left: auto;
-  right: 70px;
+  left: 240px;
+}
+.banner-button-prev.slick-arrow {
+  right: auto;
+  left: 115px;
 }
 
 .slick-arrow {
@@ -459,17 +463,17 @@ ul.tab-menu {
 }
 
 .banner-button-next:hover {
-  background: #096bd8;
+  background: #81bfda;
   color: #fff;
 }
 
 .banner-button-next:hover {
-  background: #096bd8;
+  background: #81bfda;
   color: #fff;
 }
 
 .banner-button-prev:hover {
-  background: #096bd8;
+  background: #81bfda;
   color: #fff;
 }
 
@@ -606,8 +610,8 @@ ul.tab-menu {
 }
 
 .turon-counter-content {
-  margin-left: 140px;
-
+  // margin-left: 140px;
+  text-align: center;
   @media #{$sm,$xs} {
     margin-left: 0px !important;
   }
@@ -889,58 +893,57 @@ button.arrow-button i {
   bottom: -40px;
 }
 
-
 .form-box {
-	position: relative;
+  position: relative;
 }
 
 .form-box p {
-	position: absolute;
-	bottom: -40px;
+  position: absolute;
+  bottom: -40px;
 }
 .form-2-box {
-	position: relative;
+  position: relative;
 }
 
 .form-2-box p {
-	position: absolute;
-	bottom: -40px;
-    color: #dcdbdb !important;
+  position: absolute;
+  bottom: -40px;
+  color: #dcdbdb !important;
 }
 .contact-icon p {
-	position: absolute;
-	bottom: -10px;
+  position: absolute;
+  bottom: -10px;
 }
 
 .comment-rating ul li span i {
-	color: #f8a231;
-	font-size: 14px;
+  color: #f8a231;
+  font-size: 14px;
 }
-.empty_message{
-    font-size: 30px;
-    font-weight: bold;
+.empty_message {
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.btn_back_two:hover{
-    color:#fff;
+.btn_back_two:hover {
+  color: #fff;
 }
 
 .conatct-post-form input {
-	border: none;
-	height: 60px;
-	margin-bottom: 30px;
-	padding: 0 30px;
-	width: 100%;
-	font-size: 14px;
-	color: #a7a7c1;
+  border: none;
+  height: 60px;
+  margin-bottom: 30px;
+  padding: 0 30px;
+  width: 100%;
+  font-size: 14px;
+  color: #a7a7c1;
 }
 
 .conatct-post-form textarea {
-	border: none;
-	height: 150px;
-	margin-bottom: 30px;
-	padding: 30px;
-	width: 100%;
-	color: #a7a7c1;
-	font-size: 14px;
+  border: none;
+  height: 150px;
+  margin-bottom: 30px;
+  padding: 30px;
+  width: 100%;
+  color: #a7a7c1;
+  font-size: 14px;
 }

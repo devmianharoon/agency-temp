@@ -10,6 +10,7 @@ import bgTwo from "../../../../public/assets/img/slider/slider-2.jpg";
 import bgFour from "../../../../public/assets/img/slider/slider-4.jpg";
 import bgFive from "../../../../public/assets/img/slider/slider-5.jpg";
 import { usePathname } from "next/navigation";
+import Button from "@/components/button/button";
 
 const SliderDefault = () => {
   const pathName = usePathname();
@@ -46,8 +47,6 @@ const SliderDefault = () => {
     },
   ];
 
-
-
   return (
     <>
       <div className="slider-area">
@@ -79,15 +78,13 @@ const SliderDefault = () => {
             1200: {
               slidesPerView: 1,
             },
-          }}
-        >
+          }}>
           {sliderData?.map((item, index) => (
             <SwiperSlide key={item.id}>
               <div className="single-slider">
                 <div
                   className="slider-height slider-overlay z-1 d-flex align-items-center"
-                  style={{ backgroundImage: `url(${item.bgImg.src})` }}
-                >
+                  style={{ backgroundImage: `url(${item.bgImg.src})` }}>
                   <div className="container">
                     <div className="row ">
                       <div className="col-xl-8 col-lg-8">
@@ -101,22 +98,15 @@ const SliderDefault = () => {
                           <div
                             className="slider-button"
                             data-animation="fadeInUp"
-                            data-delay=".7s"
-                          >
-                            <Link className="btn" href="/about">
-                              <span className="btn-text">
-                                learn more{" "}
-                                <i className="fas fa-long-arrow-alt-right"></i>{" "}
-                              </span>
-                            </Link>
+                            data-delay=".7s">
+                            <Button text="learn more" url="/" />
                             <Link
                               className={`${
                                 pathName === "/home-2"
                                   ? "slider-btn"
                                   : "text-link"
                               }`}
-                              href="/about"
-                            >
+                              href="/about">
                               <span>
                                 How It Works{" "}
                                 <i className="fas fa-long-arrow-alt-right"></i>{" "}
@@ -132,8 +122,7 @@ const SliderDefault = () => {
                             onClick={() => {
                               openVideoModal();
                             }}
-                            className="popup-video"
-                          >
+                            className="popup-video">
                             <i className="fas fa-play"></i>
                           </Link>
                         </div>
@@ -146,15 +135,15 @@ const SliderDefault = () => {
           ))}
         </Swiper>
         <div className="bd-trending__navigation">
-        <button className="banner-button-prev slick-arrow">
-          <i className="fa-regular fa-angle-left"></i>
-        </button>
-        <button className="banner-button-next slick-arrow">
-          <i className="fa-regular fa-angle-right"></i>
-        </button>
+          <button className="banner-button-prev slick-arrow">
+            <i className="fa-regular fa-angle-left"></i>
+          </button>
+          <button className="banner-button-next slick-arrow">
+            <i className="fa-regular fa-angle-right"></i>
+          </button>
+        </div>
       </div>
-      </div>
-      
+
       <ModalVideo
         channel="youtube"
         isOpen={isOpen}

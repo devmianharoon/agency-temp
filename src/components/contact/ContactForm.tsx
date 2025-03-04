@@ -3,6 +3,7 @@ import { contact_schema } from "@/utils/validation-schema";
 import React from "react";
 import { useFormik } from "formik";
 import ErrorMsg from "@/form/ErrorMsg";
+import Button from "../button/button";
 
 const ContactForm = () => {
   const { handleChange, handleSubmit, handleBlur, errors, values, touched } =
@@ -96,21 +97,14 @@ const ContactForm = () => {
                         defaultValue={values.massage}
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        placeholder="Write message"
-                      ></textarea>
+                        placeholder="Write message"></textarea>
                       <span>
                         <i className="fas fa-pencil-alt"></i>
                       </span>
                       {touched.massage && <ErrorMsg error={errors.massage} />}
                     </div>
-                    <div className="contact-btn contact-2-btn text-center">
-                      <button className="btn" type="submit">
-                        <span className="btn-text">
-                          send message{" "}
-                          <i className="fas fa-long-arrow-alt-right"> </i>
-                        </span>{" "}
-                        <span className="btn-border"></span>
-                      </button>
+                    <div className="  text-center">
+                      {/* <Button text="submit" url="/"></Button> */}
                     </div>
                   </div>
                 </div>
