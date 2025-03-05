@@ -447,15 +447,9 @@ ul.tab-menu {
   z-index: 10;
 }
 
-.banner-button-next.slick-arrow {
-  left: auto;
-  left: 240px;
+.banner-button-next {
+  margin-left: 45px;
 }
-.banner-button-prev.slick-arrow {
-  right: auto;
-  left: 115px;
-}
-
 .slick-arrow {
   @media #{$sm,$xs,$md} {
     display: none;
@@ -463,18 +457,18 @@ ul.tab-menu {
 }
 
 .banner-button-next:hover {
-  background: #81bfda;
-  color: #fff;
+  background: $theme-color;
+  color: $white;
 }
 
 .banner-button-next:hover {
-  background: #81bfda;
-  color: #fff;
+  background: $theme-color;
+  color: $white;
 }
 
 .banner-button-prev:hover {
-  background: #81bfda;
-  color: #fff;
+  background: $theme-color;
+  color: $white;
 }
 
 // slider tow

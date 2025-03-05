@@ -114,6 +114,14 @@ const SliderDefault = () => {
                             </Link>
                           </div>
                         </div>
+                        <div className="bd-trending__navigation">
+                          <button className="banner-button-prev slick-arrow">
+                            <i className="fa-regular fa-angle-left"></i>
+                          </button>
+                          <button className="banner-button-next slick-arrow">
+                            <i className="fa-regular fa-angle-right"></i>
+                          </button>
+                        </div>
                       </div>
                       <div className="col-xl-4 col-lg-3 d-none d-lg-block">
                         <div className="slider-video text-md-right">
@@ -134,14 +142,6 @@ const SliderDefault = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="bd-trending__navigation">
-          <button className="banner-button-prev slick-arrow">
-            <i className="fa-regular fa-angle-left"></i>
-          </button>
-          <button className="banner-button-next slick-arrow">
-            <i className="fa-regular fa-angle-right"></i>
-          </button>
-        </div>
       </div>
 
       <ModalVideo

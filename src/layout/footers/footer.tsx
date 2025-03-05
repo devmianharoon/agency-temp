@@ -13,8 +13,33 @@ const FooterOne = () => {
       <footer>
         <div className="footer-area grey-bg pt-80 pb-30">
           <div className="container">
+            <div className="newsletter-bg pb-50 mb-80">
+              <div className="row">
+                <div className="col-xl-6 col-lg-7 mb-30">
+                  <div className="single-newsletter ">
+                    <div className="newsletter-form">
+                      <form action="#">
+                        <input placeholder="Enter Your Email :" type="email" />
+                        <button className="btn" type="submit">
+                          <span className="btn-text">
+                            subscribe{" "}
+                            <i className="fas fa-long-arrow-alt-right"></i>
+                          </span>{" "}
+                          <span className="btn-border"></span>
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-xl-6 col-lg-5 mb-30">
+                  <div className="footer-2-icon text-lg-right">
+                    <SocilaLinks />
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="row">
-              <div className="col-xl-3 col-lg-3 col-md-4">
+              <div className="col-xl-5 col-lg-5 col-md-6">
                 <div className="footer-wrapper mb-30">
                   <div className="footer-logo">
                     <Link href="/">
@@ -33,7 +58,7 @@ const FooterOne = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-2 col-md-4">
+              <div className="col-xl-2 col-lg-2 col-md-6">
                 <div className="footer-wrapper mb-30">
                   <h4 className="footer-title">Our Services</h4>
                   <ul className="fotter-menu">
@@ -58,8 +83,8 @@ const FooterOne = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-xl-2 col-lg-2 col-md-4">
-                <div className="footer-wrapper mb-30">
+              <div className="col-xl-3 col-lg-3 col-md-6">
+                <div className="footer-wrapper mb-30 pl-50">
                   <h4 className="footer-title">Quick Links</h4>
                   <ul className="fotter-menu">
                     <li>
@@ -83,43 +108,7 @@ const FooterOne = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-xl-3 col-lg-3 col-md-6">
-                <div className="footer-wrapper mb-30">
-                  <h4 className="footer-title">Recent News</h4>
-                  <div className="footer-news">
-                    <ul>
-                      <li>
-                        <div className="footer-news-img">
-                          <Link href="/blog">
-                            <Image src={imgOne} alt="" />
-                          </Link>
-                        </div>
-                        <div className="footer-news-text">
-                          <h5>
-                            <Link href="/blog">
-                              Building Real Time Charts With Grap HQL & Postgres
-                            </Link>
-                          </h5>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="footer-news-img">
-                          <Link href="/blog">
-                            <Image src={imgTow} alt="" />
-                          </Link>
-                        </div>
-                        <div className="footer-news-text">
-                          <h5>
-                            <Link href="/blog">
-                              How To Build An Endless Runner Or Virtual Reality
-                            </Link>
-                          </h5>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+             
               <div className="col-xl-2 col-lg-2 col-md-6">
                 <div className="footer-wrapper mb-30">
                   <h4 className="footer-title">Contact Us</h4>

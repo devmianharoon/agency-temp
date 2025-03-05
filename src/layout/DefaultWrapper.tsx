@@ -39,14 +39,14 @@ const Wrapper = ({ children }:childrenType) => {
           case "/":
             return <FooterOne/>;
           case "/blog":
-            return <FooterTwo/>;
+            return <FooterOne/>;
           case "/blog":
-            return <FooterTwo/>;
+            return <FooterOne/>;
           case "/blog-details":
-            return <FooterTwo/>;
+            return <FooterOne/>;
          
           default:
-            return <FooterTwo/>;
+            return <FooterOne/>;
         }
       })()}
     </>

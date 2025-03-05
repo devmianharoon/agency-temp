@@ -20,11 +20,11 @@
   width: 340px;
 }
 .newsletter-form input::placeholder {
-  color: #696969;
+  color: $body-color;
   font-size: 15px;
 }
 .newsletter-form input::-moz-placeholder {
-  color: #696969;
+  color: $body-color;
   font-size: 15px;
 }
 .newsletter-form button.btn {
@@ -39,20 +39,20 @@
 .single-newsletter .newsletter-form input {
   height: 60px;
   padding: 0 30px;
-  background: #1b2f3e;
-  color: #bababa;
+  background: $white;
+  color: $body-color;
   font-size: 15px;
   border-radius: 5px;
-  border: none;
+  border: 1px solid $light-grey;
   width: 340px;
   float: left;
 }
 .single-newslette .newsletter-form input::placeholder {
-  color: #bababa;
+  color: $body-color;
   font-size: 15px;
 }
 .single-newslette .newsletter-form input::-moz-placeholder {
-  color: #bababa;
+  color: $body-color;
   font-size: 15px;
 }
 .single-newsletter .newsletter-form button.btn {

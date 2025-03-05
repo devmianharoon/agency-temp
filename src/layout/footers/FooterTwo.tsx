@@ -7,9 +7,7 @@ const FooterTwo = () => {
   return (
     <>
       <footer>
-        <div
-          className="footer-area pt-80 "
-          style={{ backgroundColor: "#81BFDA" }}>
+        <div className="footer-area pt-80 grey-bg">
           <div className="container">
             <div className="newsletter-bg pb-50 mb-80">
               <div className="row">
@@ -37,14 +35,14 @@ const FooterTwo = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-xl-5 col-lg-5 col-md-6">
+              <div className="col-xl-5 col-lg-5 col-md-6 ">
                 <div className="footer-wrapper footer-2-wrapper mb-30">
                   <div className="footer-logo">
                     <Link href="/">
                       <Image src={logoWhite} alt="" />
                     </Link>
                   </div>
-                  <div className="footer-text text-white">
+                  <div className="footer-text ">
                     <p>
                       Sed ut perspiciatis unde omnis iste natus error
                       sitluptatem accusantium doloremque laudantium totam rem

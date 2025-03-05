@@ -19,7 +19,7 @@ const FooterBottom = () => {
               <div className="col-xl-4 col-lg-4 col-md-4">
                 <div className="footer-bottem-text text-md-right">
                   <p>
-                    Design By <Link href="">Torun</Link>
+                    Design By <Link href="">Worth Tech</Link>
                   </p>
                 </div>
               </div>

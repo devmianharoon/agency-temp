@@ -86,7 +86,7 @@ const CourseDefault = () => {
         ))}
       </Swiper>
 
-      <div className="bd-trending__navigations">
+      <div className="bd-trending__navigations ">
         <button className="case-button-prev banner-button-prev slick-arrow">
           <i className="fa-regular fa-angle-left"></i>
         </button>

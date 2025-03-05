@@ -104,7 +104,7 @@ const ContactForm = () => {
                       {touched.massage && <ErrorMsg error={errors.massage} />}
                     </div>
                     <div className="  text-center">
-                      {/* <Button text="submit" url="/"></Button> */}
+                      <Button text="submit" url="/"></Button>
                     </div>
                   </div>
                 </div>
